@@ -1,0 +1,30 @@
+{
+  "name": "tracelink",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c magenta,cyan \"npm run server\" \"next dev\"",
+    "build": "next build",
+    "start": "next start",
+    "server": "node server/server.js",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.1",
+    "express": "^5.2.1",
+    "framer-motion": "^13.4.0",
+    "lucide-react": "^1.47.0",
+    "mongoose": "^9.10.1",
+    "nanoid": "^6.0.1",
+    "next": "16.3.5",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "ua-parser-js": "^2.0.10"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.5"
+  }
+}
